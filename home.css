@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: #1e293b;
+  padding: 10px 20px;
+  border-radius: 12px;
+  align-items: center;
+}
+.nav .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav .badge.admin {
+  background: red;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.nav .dashboard-btn {
+  padding: 8px 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.notification {
+  font-size: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.filters select, .filters label {
+  background: #1e293b;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* Search */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.search-bar .ask-btn {
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Ticket Card */
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ticket-card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 15px;
+  border-left: 5px solid limegreen;
+}
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+}
+.status.open {
+  background: green;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+.tags {
+  margin-top: 8px;
+}
+.tag {
+  background: #334155;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.tag.green {
+  background: #22c55e;
+}
+.ticket-meta {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.pagination span {
+  background: #1e293b;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickDesk Dashboard</title>
+  <link rel="stylesheet" href="ask.css" />
+</head>
+<body>
+
+  <!-- 🔝 Topbar with Ask button -->
+  <header class="navbar">
+    <div class="logo">QuickDesk</div>
+    <button class="ask-btn" onclick="showForm()">Ask</button>
+  </header>
+
+  <!-- 💬 Ask Question Modal -->
+  <div class="ask-form" id="askForm">
+    <div class="form-box">
+      <h2>Ask Your Question</h2>
+      <label>Question</label>
+      <input type="text" placeholder="Enter your question" />
+
+      <label>Description</label>
+      <textarea rows="4" placeholder="Describe your issue"></textarea>
+
+      <label>Tags</label>
+      <input type="text" placeholder="e.g. Login, Bug, Feature" />
+
+      <div class="btns">
+        <button onclick="hideForm()">Cancel</button>
+        <button class="post-btn">Post</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="ask.js"></script>
+</body>
+</html>

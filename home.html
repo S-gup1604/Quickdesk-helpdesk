@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickDesk Tickets</title>
+  <link rel="stylesheet" href="home.css" />
+  <script>
+  function redirectToAskPage() {
+    window.location.href = "ask.html";
+  }
+</script>
+</head>
+<body>
+
+  <!-- 🔝 Top Navigation -->
+  <header class="nav">
+    <div class="left">
+      <span class="title">QuickDesk</span>
+    </div>
+    <div class="right">
+      <span class="badge admin">Admin</span>
+      <button class="dashboard-btn">Dashboard</button>
+      <span class="notification">🔔</span>
+    </div>
+  </header>
+
+  <!-- 🧰 Filters -->
+  <div class="filters">
+    <label><input type="checkbox" /> Show open only</label>
+    <select>
+      <option>Categories</option>
+      <option>Technical</option>
+      <option>Billing</option>
+    </select>
+    <select>
+      <option>Status</option>
+      <option>Open</option>
+      <option>Closed</option>
+    </select>
+    <div class="sort-by">
+      <label>Sort by:</label>
+      <input type="radio" name="sort" checked /> Most Comment
+      <input type="radio" name="sort" /> Most Upvote
+    </div>
+  </div>
+
+  <!-- 🔍 Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search tickets..." />
+    <button class="ask-btn" onclick="redirectToAskPage()">Ask</button>
+>Ask</button>
+  </div>
+
+  <!-- 🧾 Ticket Cards -->
+  <div class="ticket-list">
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <h3>Is it good to use AI for hackathon?</h3>
+        <span class="status open">Open</span>
+      </div>
+      <p>Posted by <span class="posted-by">odoo IN pvt. ltd.</span></p>
+      <div class="tags">
+        <span class="tag">Technical</span>
+        <span class="tag green">AI</span>
+      </div>
+      <div class="ticket-meta">
+        <span>💬 11</span>
+        <span>👍 21</span>
+      </div>
+    </div>
+    <!-- Repeat .ticket-card for more tickets -->
+  </div>
+
+  <!-- 📄 Pagination -->
+  <div class="pagination">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>...</span>
+    <span>Next »</span>
+  </div>
+
+</body>
+</html>
